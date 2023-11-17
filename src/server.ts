@@ -6,7 +6,7 @@ import { request } from "http";
 const app = fastify();
 
 // users
-app.get("/users", async () => {
+app.get("/user", async () => {
 
     try {
         const { data: users } = await supabase.from("users").select("*");
